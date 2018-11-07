@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:alpha="0.2"
+            android:src="@drawable/plaqueta"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Número de preguntas: "
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif"
+                android:textSize="30dp"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/numeroDePreguntas"
+                android:textColor="@color/black"
+                android:text="5"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/question"
+                android:fontFamily="sans-serif"
+                android:textAlignment="center"
+                android:textSize="30dp"/>
+
+            <ImageButton
+                android:id="@+id/remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_remove"
+                android:layout_toLeftOf="@id/numeroDePreguntas"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/question"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add"
+                android:layout_toRightOf="@id/numeroDePreguntas"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/question"/>
+
+            <TextView
+                android:id="@+id/questionThemes"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Temas de color:"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_below="@id/numeroDePreguntas"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif"
+                android:textSize="30dp"/>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
